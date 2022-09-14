@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-* { 
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Do Hyeon', sans-serif;
-} 
+    font-family: 'NanumSquareRound';
+    text-align: center;
+}
 
-.body {
+#logo {
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 6.5em;
+    color: #94adfa;
+    text-shadow: 3px -3px 5px navy;
+}
+#main-box {
     margin: 0 auto;
-    background-color: #6666cc;
+    margin-top: 10px;
+    /* background-color: #6666cc; */
     box-sizing: border-box;
     color: #3d447e;
 }
@@ -23,11 +32,17 @@
     height: 70px;
     margin: 5px;
 }
+#top1 {
+    height: 30%;
+}
+#top2 {
+    height: 70%;
+}
 .file-upload {
     position: relative;
     padding: 3% ;
     margin: 0 auto;
-    width: 50vw;
+    width: 40vw;
     height: 80vh;
     line-height: 5vh;
     border-radius: 10px;
@@ -35,7 +50,6 @@
     background-color: #bfcfff;
 }
 .file-upload-btn {
-    width: 50%;
     margin: 0 auto;
     color: #fff;
     background: #4735b8;
@@ -76,14 +90,23 @@
 }
 
 .file-upload-input {
-    position: absolute;
+    position: relative;
+    padding: 3%;
+    margin: 0 auto;
+    width: 35vw;
+    height: 60vh;
+    line-height: 5vh;
+    opacity: 0;
+    cursor: pointer;
+
+    /* position: absolute;
     margin: 0 auto;
     padding: 0;
     width: 100%;
     height: 100%;
     outline: none;
     opacity: 0;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .image-upload-wrap {
@@ -98,11 +121,15 @@
     background-color: rgb(238, 240, 255);
 }
 
-.image-dropping,
+/* .image-dropping,
 .image-upload-wrap:hover {
     background-color: #35465d82;
     border: 3px dashed #ffffff;
-}
+} */
+/* .img-click:hover {
+    background-color: #35465d82;
+    border: 3px dashed #ffffff;
+} */
 
 .image-title-wrap {
     margin: 0 auto;
@@ -112,7 +139,7 @@
 
 .drag-text {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -164,15 +191,11 @@
     transition: all .2s ease;
 }
 
-.section {
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
 .title {
+    font-family: 'NanumBarunPenBold';
     margin-top: 15px;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: 500;
     line-height: 4vh;
     text-align: center;
     color: #35465d;
@@ -223,7 +246,7 @@ label {
     margin: 0 auto;
     width: 90px;
     height: 40px;
-    box-shadow: 0 0 0 8px #e5e9ea inset;
+    box-shadow: 0 0 0 8px #b3b7b8 inset;
     border-radius: 30px;
     position: relative;
 }
@@ -267,18 +290,18 @@ label {
 }
 
 input:checked + label > .knob {
-    box-shadow: 0 0 0 8px #a1c6dd inset;
+    box-shadow: 0 0 0 8px #93bed9 inset;
     background-color: #e2ecf4;
     transform: translateX(49px) rotate(-140deg);
 }
 
 input:checked + label > .knob > i {
-    background-color: #a1c6dd;
+    background-color: #93bed9;
 }
 
 input:checked + label > .knob > i:after,
 input:checked + label > .knob > i:before {
-    background-color: #a1c6dd;
+    background-color: #93bed9;
 }
 
 input:checked + label > .knob > i:after {
